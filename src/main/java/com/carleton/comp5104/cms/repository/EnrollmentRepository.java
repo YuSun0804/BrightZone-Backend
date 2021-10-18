@@ -15,4 +15,6 @@ public interface EnrollmentRepository extends CrudRepository<Enrollment, Integer
     Set<Enrollment> findByStudentIdAndStatus(int studentId, EnrollmentStatus status);
     void deleteByStudentId(int studentId);
     int deleteByClassId(int classId);
+
+
 }
